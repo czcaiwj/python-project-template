@@ -1,23 +1,16 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
+build/
+dist/
+wheels/
 
 # Virtual environments
 .venv/
 
-# Testing
+# Testing / coverage
 .pytest_cache/
 .coverage
 htmlcov/
@@ -40,8 +33,3 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
-
-# Build
-build/
-dist/
-*.egg-info/

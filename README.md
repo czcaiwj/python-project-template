@@ -54,3 +54,12 @@ Before making significant changes:
 3. Avoid unrelated refactoring.
 4. Run tests after changes.
 5. Review git diff before completion.
+
+## Setup
+
+Clone the repository and synchronize the environment:
+
+```bash
+git clone <repository-url>
+cd <project>
+uv sync
