@@ -37,6 +37,16 @@ Run the application:
 uv run python-project-template
 ```
 
+Alternatively, run the package as a Python module:
+
+```bash
+uv run python -m python_project_template
+```
+
+With the package installed in your active Python environment, you can also use
+`python -m python_project_template` directly. Both entry points print
+`Hello from python-project-template!`.
+
 Run tests:
 
 ```bash
