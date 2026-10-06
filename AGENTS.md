@@ -56,6 +56,23 @@ When changing behavior:
 - Use `pathlib` for filesystem paths.
 - Use type annotations for public functions and interfaces.
 
+## Planning
+
+For small, localized changes, inspect the relevant code and proceed directly.
+
+Use a written implementation plan when a task involves substantial complexity, such as:
+
+- changes spanning multiple subsystems or architectural boundaries;
+- public API or persistent-data migrations;
+- security-sensitive changes;
+- significant refactoring;
+- substantial uncertainty that requires investigation or prototyping;
+- work that needs multiple independently verifiable milestones.
+
+Do not create planning documents for routine fixes or narrowly scoped changes.
+
+If the repository later defines a project-specific planning standard, follow that standard.
+
 ## Validation
 
 Before considering a code change complete, run:
@@ -81,6 +98,7 @@ git status
 ```
 
 Do not report the task as complete if relevant checks fail. If a check cannot be run, state why.
+The local validation commands should match the repository CI checks. Do not change CI merely to bypass a local failure.
 
 ## Security
 
